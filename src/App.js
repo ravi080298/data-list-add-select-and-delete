@@ -27,11 +27,6 @@ export default function App() {
     setSelectValue(value);
   };
 
-  const listELement = ['ram', 'raj', 'ravi'];
-
-  const onDragDrop = (value) => {
-    console.log(value);
-  };
 
   return (
     <div>
@@ -51,10 +46,6 @@ export default function App() {
           );
         })}
       </div>
-
-      {listELement.map((value) => {
-        return <li onDrag={(value) => onDragDrop(value)}>{value}</li>;
-      })}
     </div>
   );
 }
